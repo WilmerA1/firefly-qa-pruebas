@@ -152,3 +152,7 @@ vite.config.ts.timestamp-*
 .env
 qa/resultados/
 .phpunit.cache/
+
+/test-results/
+/playwright-report/
+/results/
