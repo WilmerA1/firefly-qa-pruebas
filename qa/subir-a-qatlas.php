@@ -314,6 +314,11 @@ function subirAQatlas(string $dir): int
         [$c, , $cr] = qatlasPeticion($base, $token, 'POST', '/test-runs/' . $runId . '/complete');
         if ($c >= 200 && $c < 300) {
             qatlasLog('Ejecución completada → ' . $enlace);
+        } elseif (403 === $c && str_contains($cr, 'token scope')) {
+            // El alcance "Solo ingesta (CI)" sube resultados y evidencia, pero no puede completar ejecuciones.
+            // No es un fallo de la corrida: los 19 resultados ya están en QAtlas.
+            qatlasLog('Resultados subidos. El token "Solo ingesta" no puede completar ejecuciones:');
+            qatlasLog('  completala con el botón "Completar ejecución" → ' . $enlace);
         } else {
             $todoBien = false;
             qatlasLog('No se pudo completar la ejecución — ' . qatlasExplicarError($c, $cr));
