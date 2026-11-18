@@ -1,6 +1,6 @@
 import { defineConfig } from '@playwright/test';
-
-try { process.loadEnvFile('.env'); } catch { /* sin .env */ }
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 
 export default defineConfig({
   testDir: './tests',
