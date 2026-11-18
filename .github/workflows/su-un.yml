@@ -1,0 +1,30 @@
+name: SU-UN pruebas unitarias → QAtlas
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # botón "Run workflow" en la pestaña Actions
+
+jobs:
+  su-un:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Construir imagen de pruebas (Firefly III 6.6.6 + PHPUnit 13)
+        run: docker build -t ff-qa qa
+
+      - name: Ejecutar SU-UN y reportar a QAtlas
+        run: bash correr-y-subir.sh
+        env:
+          QATLAS_URL: ${{ vars.QATLAS_URL }}
+          QATLAS_TOKEN: ${{ secrets.QATLAS_TOKEN }}
+          QATLAS_PROJECT: ${{ vars.QATLAS_PROJECT || 'FF3' }}
+
+      - name: Guardar reporte JUnit y evidencias
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: su-un-resultados
+          path: qa/resultados/

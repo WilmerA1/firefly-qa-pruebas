@@ -1,0 +1,176 @@
+{
+  "_nota": "Relación entre cada método PHPUnit y su caso en QAtlas (proyecto FF3). Si un código cambia en QAtlas, cambialo aquí.",
+  "casos": {
+    "testCPUN01": {
+      "caso": "CP-UN-01",
+      "codigo": "FF3-TC-26",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN02": {
+      "caso": "CP-UN-02",
+      "codigo": "FF3-TC-27",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN03": {
+      "caso": "CP-UN-03",
+      "codigo": "FF3-TC-28",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN04": {
+      "caso": "CP-UN-04",
+      "codigo": "FF3-TC-29",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN05": {
+      "caso": "CP-UN-05",
+      "codigo": "FF3-TC-30",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN06": {
+      "caso": "CP-UN-06",
+      "codigo": "FF3-TC-31",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN07": {
+      "caso": "CP-UN-07",
+      "codigo": "FF3-TC-32",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN08": {
+      "caso": "CP-UN-08",
+      "codigo": "FF3-TC-33",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN09": {
+      "caso": "CP-UN-09",
+      "codigo": "FF3-TC-34",
+      "pasos": [
+        "Crear la prueba PHPUnit que llama a IsValidPositiveAmount con el atributo amount y una función $fail que marca si fue invocada.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Comparar si la función $fail fue invocada."
+      ]
+    },
+    "testCPUN10": {
+      "caso": "CP-UN-10",
+      "codigo": "FF3-TC-35",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el valor con Validator::make y la regla iban/bic.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN11": {
+      "caso": "CP-UN-11",
+      "codigo": "FF3-TC-36",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el valor con Validator::make y la regla iban/bic.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN12": {
+      "caso": "CP-UN-12",
+      "codigo": "FF3-TC-37",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el valor con Validator::make y la regla iban/bic.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN13": {
+      "caso": "CP-UN-13",
+      "codigo": "FF3-TC-38",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el valor con Validator::make y la regla iban/bic.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN14": {
+      "caso": "CP-UN-14",
+      "codigo": "FF3-TC-39",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el valor con Validator::make y la regla iban/bic.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN15": {
+      "caso": "CP-UN-15",
+      "codigo": "FF3-TC-40",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el valor con Validator::make y la regla iban/bic.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN16": {
+      "caso": "CP-UN-16",
+      "codigo": "FF3-TC-41",
+      "pasos": [
+        "Crear la prueba PHPUnit que ejecuta GroupValidation::validateDescriptions sobre la transacción.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar los errores del validador."
+      ]
+    },
+    "testCPUN17": {
+      "caso": "CP-UN-17",
+      "codigo": "FF3-TC-42",
+      "pasos": [
+        "Crear la prueba PHPUnit que ejecuta GroupValidation::validateDescriptions sobre la transacción.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar los errores del validador."
+      ]
+    },
+    "testCPUN18": {
+      "caso": "CP-UN-18",
+      "codigo": "FF3-TC-43",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el id de la cuenta con la regla BelongsUser.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    },
+    "testCPUN19": {
+      "caso": "CP-UN-19",
+      "codigo": "FF3-TC-44",
+      "pasos": [
+        "Crear la prueba PHPUnit que valida el id de la cuenta con la regla BelongsUser.",
+        "Ejecutar vendor/bin/phpunit sobre la prueba.",
+        "Revisar el resultado de la validación."
+      ]
+    }
+  }
+}
