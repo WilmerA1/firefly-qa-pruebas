@@ -156,3 +156,6 @@ qa/resultados/
 /test-results/
 /playwright-report/
 /results/
+
+# Suite SU-UI: sesión de Firefly guardada por el project ui-setup (contiene cookies)
+/.auth/
